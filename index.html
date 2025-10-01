@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React SPA Blog</title>
+    
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- React and ReactDOM from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- React Router from CDN -->
+    <script crossorigin src="https://unpkg.com/react-router-dom@6.20.0/dist/umd/react-router-dom.production.min.js"></script>
+    
+    <!-- Babel Standalone for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <!-- Root element where React app will be mounted -->
+    <div id="root"></div>
+    
+    <!-- Load React components -->
+    <script type="text/babel" src="src/components/Navbar.js"></script>
+    <script type="text/babel" src="src/components/Home.js"></script>
+    <script type="text/babel" src="src/components/Contact.js"></script>
+    <script type="text/babel" src="src/components/News.js"></script>
+    <script type="text/babel" src="src/App.js"></script>
+    <script type="text/babel" src="src/index.js"></script>
+</body>
+</html>
