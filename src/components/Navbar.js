@@ -8,7 +8,7 @@ const { Link } = window.ReactRouterDOM;
 
 function Navbar() {
     return (
-        <nav className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+        <nav className="bg-gradient-to-r from-emerald-900 to-green-600 text-white shadow-lg">
             <div className="container mx-auto px-4 py-4">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     {/* Logo/Brand */}
