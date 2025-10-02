@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="container mx-auto px-4 py-8 fade-in">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-emerald-900 to-green-500 text-white rounded-lg shadow-xl p-8 md:p-12 mb-8">
+            <div className="bg-gradient-to-r from-cyan-800 to-cyan-800 text-white rounded-lg shadow-xl p-8 md:p-12 mb-8">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Welcome to React Blog
                 </h1>
