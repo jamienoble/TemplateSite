@@ -33,6 +33,24 @@ function Navbar() {
                             News
                         </Link>
                         <Link 
+                            to="/portfolio" 
+                            className="hover:text-gray-200 hover:underline font-medium text-lg transition"
+                        >
+                            Portfolio
+                        </Link>
+                        <Link 
+                            to="/faq" 
+                            className="hover:text-gray-200 hover:underline font-medium text-lg transition"
+                        >
+                            FAQ
+                        </Link>
+                        <Link 
+                            to="/about" 
+                            className="hover:text-gray-200 hover:underline font-medium text-lg transition"
+                        >
+                            About
+                        </Link>
+                        <Link 
                             to="/contact" 
                             className="hover:text-gray-200 hover:underline font-medium text-lg transition"
                         >

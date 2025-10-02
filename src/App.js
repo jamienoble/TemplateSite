@@ -6,6 +6,36 @@
 
 const { BrowserRouter, Switch, Route } = window.ReactRouterDOM;
 
+// ...existing components are assumed to be globally available (Home, News, Contact, Navbar)
+// Prefer global components where available, but provide lightweight fallbacks
+// so the app won't crash in environments that don't support dynamic requires.
+const About = window.About || function AboutFallback() {
+    return (
+        <div className="container mx-auto px-4 py-12 text-center">
+            <h1 className="text-2xl font-bold mb-4">About</h1>
+            <p className="text-gray-600">About component not loaded. If you're developing locally, ensure the About component is included in your bundle or restart the dev server.</p>
+        </div>
+    );
+};
+
+const Portfolio = window.Portfolio || function PortfolioFallback() {
+    return (
+        <div className="container mx-auto px-4 py-12 text-center">
+            <h1 className="text-2xl font-bold mb-4">Portfolio</h1>
+            <p className="text-gray-600">Portfolio component not loaded. Add the Portfolio component to the project or rebuild the bundle to view this page.</p>
+        </div>
+    );
+};
+
+const FAQ = window.FAQ || function FAQFallback() {
+    return (
+        <div className="container mx-auto px-4 py-12 text-center">
+            <h1 className="text-2xl font-bold mb-4">FAQ</h1>
+            <p className="text-gray-600">FAQ component not loaded. Add the FAQ component to the project or rebuild the bundle to view this page.</p>
+        </div>
+    );
+};
+
 function App() {
     return (
         <BrowserRouter>
@@ -19,6 +49,12 @@ function App() {
                     <Route exact path="/" component={Home} />
                     {/* News page route */}
                     <Route path="/news" component={News} />
+                    {/* About page route */}
+                    <Route path="/about" component={About} />
+                    {/* Portfolio page route */}
+                    <Route path="/portfolio" component={Portfolio} />
+                    {/* FAQ page route */}
+                    <Route path="/faq" component={FAQ} />
                     {/* Contact page route */}
                     <Route path="/contact" component={Contact} />
                     {/* 404 Not Found route - catches all undefined routes */}
