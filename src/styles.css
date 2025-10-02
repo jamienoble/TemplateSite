@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+/* Sticky navbar */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* stay above page content */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
